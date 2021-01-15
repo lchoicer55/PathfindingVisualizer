@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./pathfindingVisualizer.css";
 import Node from "./Node/node";
 import NavBar from "./navbar";
+// import NavBar from 'react-bootstrap/NavBar';
 
 //Pathfinding Algorithms
 import {
@@ -480,16 +481,12 @@ class PathfindingVisualizer extends Component {
           visualizeDijkstra={this.visualizeDijkstra.bind(this)}
           visualizeAStar={this.visualizeAStar.bind(this)}
           visualizeGreedyBFS={this.visualizeGreedyBFS.bind(this)}
-          visualizeBidirectionalGreedySearch={this.visualizeBidirectionalGreedySearch.bind(
-            this
-          )}
+          visualizeBidirectionalGreedySearch={this.visualizeBidirectionalGreedySearch.bind(this)}
           visualizeBFS={this.visualizeBFS.bind(this)}
           visualizeDFS={this.visualizeDFS.bind(this)}
           visualizeRandomWalk={this.visualizeRandomWalk.bind(this)}
           generateRandomMaze={this.generateRandomMaze.bind(this)}
-          generateRecursiveDivisionMaze={this.generateRecursiveDivisionMaze.bind(
-            this
-          )}
+          generateRecursiveDivisionMaze={this.generateRecursiveDivisionMaze.bind(this)}
           generateVerticalMaze={this.generateVerticalMaze.bind(this)}
           generateHorizontalMaze={this.generateHorizontalMaze.bind(this)}
           clearGrid={this.clearGrid.bind(this)}
@@ -743,64 +740,3 @@ const getVisitedNodesInOrder = (
 };
 
 export default PathfindingVisualizer;
-
-/* <button className="button" onClick={() => this.visualizeDijkstra()}>
-Dijkstra's
-</button>
-&nbsp;
-<button className="button" onClick={() => this.visualizeAStar()}>
-A Star
-</button>
-&nbsp;
-<button className="button" onClick={() => this.visualizeBFS()}>
-Breadth First Search
-</button>
-&nbsp;
-<button className="button" onClick={() => this.visualizeDFS()}>
-Depth First Search
-</button>
-&nbsp;
-<button className="button" onClick={() => this.visualizeRandomWalk()}>
-Random Walk
-</button>
-&nbsp;
-<button className="button" onClick={() => this.clearGrid()}>
-Clear Grid
-</button>
-<br />
-<button className="button" onClick={() => this.visualizeGreedyBFS()}>
-Greedy Best First Search
-</button>
-&nbsp;
-<button
-className="button"
-onClick={() => this.visualizeBidirectionalGreedySearch()}
->
-Bidirectional Best First Search
-</button>
-&nbsp;
-<button className="button" onClick={() => this.generateRandomMaze()}>
-Random Maze
-</button>
-&nbsp;
-<button
-className="button"
-onClick={() => this.generateRecursiveDivisionMaze()}
->
-Recursive Division
-</button>
-&nbsp;
-<button
-className="button"
-onClick={() => this.generateVerticalMaze()}
->
-Vertical Maze
-</button>
-&nbsp;
-<button
-className="button"
-onClick={() => this.generateHorizontalMaze()}
->
-Horizontal Maze
-</button>
- */

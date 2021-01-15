@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import "./navbar.css";
+import Button from 'react-bootstrap/Button';
 
 const brand = window.innerWidth > 600 ? "Pathfinding Visualizer" : "Pathfinder";
 
 class NavBar extends Component {
   state = {
-    algorithm: "Visualize Algorithm",
-    maze: "Generate Maze",
+    algorithm: "Visualize Dijkstra",
+    maze: "Generate Random Maze",
     pathState: false,
     mazeState: false,
     speedState: "Speed",
@@ -155,10 +156,7 @@ class NavBar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand navbar-dark bg-dark">
-        <a
-          className="navbar-brand h1 mb-0"
-          href="https://rohithaug.github.io/pathfinding-visualizer/"
-        >
+        <a className="navbar-brand h1 mb-0">
           {brand}
         </a>
         <div className="navbar-collapse" id="navbarNavDropdown">
@@ -183,18 +181,10 @@ class NavBar extends Component {
                   >
                     Dijkstra's Algorithm
                   </button>
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() => this.selectAlgorithm("Visualize A*")}
-                  >
+                  <button className="dropdown-item btn-light" type="button" onClick={() => this.selectAlgorithm("Visualize A*")}>
                     A* Algorithm
                   </button>
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() => this.selectAlgorithm("Visualize Greedy BFS")}
-                  >
+                  <button className="dropdown-item btn-light" type="button" onClick={() => this.selectAlgorithm("Visualize Greedy BFS")}>
                     Greedy Best First Search
                   </button>
                   <button
@@ -238,13 +228,12 @@ class NavBar extends Component {
               </div>{" "}
             </li>
             <li>
-              <button
-                type="button"
-                className="btn btn-success"
-                onClick={() => this.visualizeAlgorithm()}
-              >
+              <Button 
+                variant="primary"
+                className="btn"
+                onClick={() => this.visualizeAlgorithm()}>
                 {this.state.algorithm}
-              </button>
+              </Button>
             </li>
             <li className="nav-item dropdown">
               <div className="dropdown">
@@ -291,59 +280,20 @@ class NavBar extends Component {
               </div>{" "}
             </li>
             <li>
-              <button
-                type="button"
-                className="btn btn-success"
-                onClick={() => this.generateMaze()}
-              >
+              <Button
+                variant="primary"
+                className="btn"
+                onClick={() => this.generateMaze()}>
                 {this.state.maze}
-              </button>
+              </Button>
             </li>
             <li>
-              <button
-                type="button"
-                className="btn btn-danger"
-                onClick={() => this.clearGrid()}
-              >
-                Clear Gird
-              </button>
-            </li>
-            <li className="nav-item dropdown">
-              <div className="dropdown">
-                <button
-                  className="btn btn-info dropdown-toggle"
-                  type="button"
-                  id="dropdownMenu1"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  {this.state.speedState}
-                </button>
-                <div className="dropdown-menu" aria-labelledby="dropdownMenu1">
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() => this.changeSpeed("Slow")}
-                  >
-                    Slow
-                  </button>
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() => this.changeSpeed("Medium")}
-                  >
-                    Medium
-                  </button>
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() => this.changeSpeed("Fast")}
-                  >
-                    Fast
-                  </button>
-                </div>
-              </div>{" "}
+              <Button
+                variant="danger"
+                className="btn"
+                onClick={() => this.clearGrid()}>
+                  Clear Gird
+              </Button>
             </li>
           </ul>
         </div>
