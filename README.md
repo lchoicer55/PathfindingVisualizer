@@ -15,7 +15,7 @@ A short and succinct program demonstrating some of the most popular pathfinding 
 
 |                  UI Library                   |                   Styling                    |
 | :-------------------------------------------: | :------------------------------------------: |
-| <img src="./public/logo1280.png" height="100px"> | <img src="./public/bootstrap800.png" height="80px"> |
+| <img src="./public/logo1280.png" height="100px"> | <img src="./public/bootstrap800.jpg" height="100px"> |
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
