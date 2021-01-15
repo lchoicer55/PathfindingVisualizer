@@ -2,8 +2,6 @@
 
 A short and succinct program demonstrating some of the most popular pathfinding algorithms. This program covers Dijkstra's Algorithm, A* Algorithm, Greedy Best First Search, Bidirectional Greedy Search, Breadth First Search and Depth First Search. This program can also generate mazes to easily test the algorithms
 
----
-
 ## PathFinding Algorithms
 
 - [Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra's_algorithm)
@@ -12,11 +10,6 @@ A short and succinct program demonstrating some of the most popular pathfinding 
 - [Bi-Directional Search](https://en.wikipedia.org/wiki/Bidirectional_search)
 - [Breadth First Search](https://en.wikipedia.org/wiki/Breadth-first_search)
 - [Depth First Search](https://en.wikipedia.org/wiki/Depth-first_search)
-
-## Stack
-
-<img src="./public/logo1280.png" height="1000px">
-<img src="./public/bootstrap800.png" height="1000px">
 
 ## Technical Stack
 
