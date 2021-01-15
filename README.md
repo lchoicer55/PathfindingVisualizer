@@ -18,6 +18,12 @@ A short and succinct program demonstrating some of the most popular pathfinding 
 <img src="./public/logo1280.png" height="1000px">
 <img src="./public/bootstrap800.png" height="1000px">
 
+## Technical Stack
+
+|                  UI Library                   |                   Styling                    |
+| :-------------------------------------------: | :------------------------------------------: |
+| <img src="./public/logo1280.png" height="100px"> | <img src="./public/bootstrap800.png" height="100px"> |
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
