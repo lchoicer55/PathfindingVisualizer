@@ -1,6 +1,6 @@
-# PathFinding Visualizer 
+# PathFinding Visualizer
 
-A short and succinct program demonstrating some of the most popular pathfinding algorithms. This program covers Dijkstra's Algorithm, A* Algorithm, Greedy Best First Search, Bidirectional Greedy Search, Breadth First Search and Depth First Search. This program can also generate mazes to easily test the algorithms
+A short and succinct program demonstrating some of the most popular pathfinding algorithms
 
 ## PathFinding Algorithms
 
@@ -15,12 +15,13 @@ A short and succinct program demonstrating some of the most popular pathfinding 
 
 |                  UI Library                   |                   Styling                    |
 | :-------------------------------------------: | :------------------------------------------: |
-| <img src="./public/logo1280.png" height="100px"> | <img src="./public/bootstrap800.jpg" height="100px"> |
+| <img src="./public/react.png" height="100px"> | <img src="./public/bootstrap.svg" height="100px"> |
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 In the project directory, you can run:
 
 ### `yarn start`
