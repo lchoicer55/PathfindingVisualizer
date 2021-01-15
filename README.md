@@ -2,6 +2,8 @@
 
 A short and succinct program demonstrating some of the most popular pathfinding algorithms
 
+### [Demo](http://louisc57.github.io/PathfindingVisualizer)
+
 ## PathFinding Algorithms
 
 - [Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra's_algorithm)
